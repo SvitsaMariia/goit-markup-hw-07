@@ -134,9 +134,8 @@ ol {
     color: var(--primary-brand-color);
     text-decoration: none;
     text-transform: uppercase;
-    padding-top: 24px;
-    padding-bottom: 24px;
     letter-spacing: 0.03em;
+    padding-left: 16px;
 }
 .logo-header {
     color: var(--title-text-color);
