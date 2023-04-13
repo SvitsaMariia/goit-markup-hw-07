@@ -122,7 +122,7 @@ ol {
     .nav-header {
         display: flex;
         align-items: center;
-        margin-left: 76px;
+        /* margin-left: 76px; */
     }
 }
 .nav-list .item.active {
@@ -153,6 +153,17 @@ ol {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.03em;
+    /* margin-right: 76px; */
+}
+/* @media screen and (min-width: 768px) {
+    .logo {
+        margin-right: 0;
+    }
+} */
+@media screen and (min-width: 1200px) {
+    .logo {
+        margin-right: 76px;
+    }
 }
 .logo-header {
     color: var(--title-text-color);
@@ -174,6 +185,7 @@ img {
 .address-list {
     display: flex;
     align-items: center;
+    gap: 40px;
 }
 .nav-list .item {
     display: block;
@@ -193,15 +205,13 @@ img {
 @media screen and (min-width: 768px) {
     .nav-list {
         display: flex;
+        align-items: center;
         gap: 40px;
     }
 }
-/* .nav-item {
-   margin-left: 40px;
-}
 .nav-item:first-child {
     margin-left: 0px;
-} */
+} 
 @media screen and (min-width: 1200px) {
     .nav-item {
         margin-right: 40px;
@@ -210,8 +220,11 @@ img {
         margin-right: 0;
     }
 }
-.address-header {
+/* .address-header {
     margin-left: auto;
+} */
+.address-item:first-child {
+    margin-left: 0;
 }
 @media screen and (min-width: 1200px) {
     .address-header {
@@ -219,10 +232,6 @@ img {
     }
 }
 @media screen and (min-width: 768px) {
-    .nav-list {
-        display: flex;
-        align-items: center;
-    }
     .address-list {
         display: flex;
         flex-direction: column;
@@ -238,9 +247,6 @@ img {
         gap: 24px;
     }
 }
-/* .address-item {
-    margin-left: 40px;
-} */
 
 .address-list .item {
     font-style: normal; 
@@ -288,7 +294,7 @@ img {
     padding-bottom: 120px;
 }
 /* Section hero 1 */
-.section.hero {
+.hero {
     margin: 0 auto;
     max-width: 1440px;
     text-align: center;
@@ -561,16 +567,7 @@ img {
     flex-direction: column;
     flex-basis: 412px;
 }
-/* .examples-title {
-    font-weight: 700;
-    font-size: var(--title-font-size);
-    line-height: 1.11;
-    color: var(--title-text-color);
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    margin-bottom: 72px;
-    margin-left: 420px;
-} */
+
 .examples-list {
     display: flex;
     gap:  24px;
@@ -657,10 +654,10 @@ img {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
     transition-property: var(--primary-bg-color) 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.team-item:first-child {
-    margin-left: 0px;
 } */
+/* .team-item:first-child {
+    margin-left: 0px;
+}
 .name {
     margin-bottom: 8px;
     font-weight: 500;
@@ -668,7 +665,7 @@ img {
     line-height: 1.2;
     color: var(--title-text-color);
     letter-spacing: 0.02em;
-}
+} */
 .job-title {
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -795,7 +792,6 @@ img {
     cursor: pointer;
     border: 1px solid var(--secondary-accent-color);
     border-radius: 4px;
-    height: 48px;
     padding: 12px 24px;
     transition: var(--secondary-bg-color) 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -893,6 +889,7 @@ button:focus {
     padding-bottom: 100px;
 }
 .footer-logo {
+    display: inline-block;
     padding-top: 0px;
     padding-bottom: 0px;
     font-family: "Raleway";
@@ -900,6 +897,7 @@ button:focus {
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
 }
 @media screen and (max-width: 468px) {
     .social-footer {
@@ -964,7 +962,6 @@ button:focus {
     line-height: calc(24/16);
     letter-spacing: 0.02em;
 }
-
 .footer-subtitle {
     display: flex;
     color: var(--primary-bg-color);
@@ -1008,7 +1005,6 @@ button:focus {
         width: 264px;
     }
 }
-
 .footer-input::placeholder {
     display: flex;
     align-items: center;
@@ -1061,7 +1057,6 @@ button:focus {
     letter-spacing: 0.02em;
     color: var(--secondary-bg-color);
     margin-bottom: 72px;
-    margin-top: 16px;
 }
 @media screen and (min-width: 768px) {
 .footer-description {
@@ -1069,7 +1064,7 @@ button:focus {
     flex-direction: column;
     align-items: center;
     gap: 16px;
-}
+ }
 }
 .footer-input:hover,
 .footer-input:focus {
