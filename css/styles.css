@@ -173,6 +173,7 @@ img {
 .address-header,
 .address-list {
     display: flex;
+    align-items: center;
 }
 .nav-list .item {
     display: block;
