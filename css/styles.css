@@ -1127,10 +1127,10 @@ button:focus {
 @media screen and (min-width: 1158px) { 
     .footer-container {
     display: flex;
-    padding: 0;
-    gap: 0;
+    padding: 0px;
+    gap: 0px;
   }
-}
+} 
 @media screen and (min-width: 768px) {
     .footer-contain {
         display: inline-block;
