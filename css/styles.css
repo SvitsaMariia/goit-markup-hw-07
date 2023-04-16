@@ -934,6 +934,7 @@ button:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 72px;
 }
 }
 @media screen and (max-width: 767px) {
@@ -971,6 +972,7 @@ button:focus {
 @media screen and (min-width: 768px) {
     .social-description {
         justify-content: left;
+        margin-bottom: 16px;
     }
 }
 @media screen and (min-width: 1158px) {
@@ -1007,8 +1009,6 @@ button:focus {
     outline: transparent;
     padding: 8px 16px 8px 16px;
     background-color: transparent;
-    color: var(--primary-bg-color);
-    border-color: var(--primary-bg-color);
     transition-duration: var(--primary-bg-color) 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 428px) {
@@ -1027,8 +1027,13 @@ button:focus {
     font-size: 12px;
     line-height: calc(24/12);
     letter-spacing: 0.04em;
-    color: var(--primary-bg-color);
 }
+@media screen and (min-width: 1158px) {
+    .footer-input::placeholder {
+        border-color: var(--primary-bg-color);
+    }
+}
+
 .footer-button {
     display: flex;
     height: 40px;
@@ -1038,8 +1043,8 @@ button:focus {
     letter-spacing: 0.04em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
     background-color: var(--primary-brand-color);
-    border-color: transparent;
     color: var(--primary-bg-color);
     cursor: pointer;
     transition: var(--primary-brand-color) 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1067,20 +1072,15 @@ button:focus {
     line-height: calc(24/16);
     letter-spacing: 0.02em;
     color: var(--secondary-bg-color);
-    margin-bottom: 72px;
 }
 @media screen and (min-width: 768px) {
 .footer-description {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
+    margin-bottom: 72px;
+    margin-right: 24px;
  }
-}
-@media screen and (min-width: 768px) {
-    .social-media-contain {
-       display: inline-block;
-    }
 }
 @media screen and (min-width: 1158px) {
     .social-media-contain {
@@ -1120,21 +1120,17 @@ button:focus {
 }
 @media screen and (min-width: 768px) {
     .footer-container {
-        gap: 24px;
         padding-left: 92px;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
+
 @media screen and (min-width: 1158px) {
     .footer-container {
         display: flex;
         padding: 0px;
         gap: 0px;
-    }
-}
-@media screen and (min-width: 768px) {
-    .footer-contain {
-        display: inline-block;
-        margin-right: 24px;
     }
 }
 @media screen and (min-width: 1158px) {
@@ -1148,7 +1144,7 @@ button:focus {
     justify-content: center;
     align-items: flex-start;
     gap: 16px;
-    margin-top: 16px;
+    /* margin-top: 16px; */
 }
 .social-link-footer {
     display: flex;
@@ -1158,7 +1154,7 @@ button:focus {
     height: 40px;
     border-radius: 50%;
     background-color: var(--primary-brand-color);
-    transition: var(--main-text-color) 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .svg-footer {
     fill: var(--secondary-bg-color);
