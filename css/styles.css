@@ -430,7 +430,6 @@ img {
         width: calc((100% - 24px) / 2);
         text-align: left;
         list-style-type: none;
-        margin-bottom: 0;
     }
 }
 @media screen and (min-width: 1158px) {
