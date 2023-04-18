@@ -802,14 +802,14 @@ img {
     padding: 12px 24px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* button:hover,
-button:focus {
+.filters-button:hover,
+.filters-button:focus {
     color: var(--primary-bg-color);
     background-color: var(--accent-color);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.08);
     box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-} */
+}
 .main-section {
     padding-top: 96px;
     padding-bottom: 120px;
@@ -823,6 +823,18 @@ button:focus {
 .img-portfolio {
     display: block;
     max-width: 100%;
+ }
+ .portfolio-container {
+    max-width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+ }
+ .footer-container-portfolio {
+    max-width: 1158px;
+    display: flex;
+    padding-left: 156px;
  }
 .works-list {
     display: flex;
