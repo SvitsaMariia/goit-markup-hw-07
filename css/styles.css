@@ -123,6 +123,7 @@ ol {
     color: var(--accent-color);
 
 }
+@media screen and (min-width: 768px) {
 .active::after {
     display: block;
     position: absolute;
@@ -132,6 +133,7 @@ ol {
     border-radius: 2px;
     bottom: -1px;
     background-color: var(--primary-brand-color);
+} 
 }
 .logo {
     font-family: 'Raleway';
